@@ -1,0 +1,9 @@
+# data mentah tidak dibagikan
+data/*.csv
+data/*.xlsx
+# file Excel hasil skrining memuat abstrak (hak cipta)
+results/*.xlsx
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
