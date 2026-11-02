@@ -1,5 +1,7 @@
 # Bias Kebocoran Data akibat SMOTE pada Prediksi Stroke
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23887243.svg)](https://doi.org/10.5281/zenodo.23887243)
+
 Kode dan hasil eksperimen untuk artikel:
 
 > Ade Rumintarsih. *Bias Kebocoran Data akibat SMOTE pada Prediksi Stroke: Re-evaluasi dengan Nested Cross-Validation dan Kalibrasi.* Naskah dikirim ke *Journal of Informatics and Electronics Engineering* (JIEE), 2026.
@@ -42,6 +44,10 @@ Pengaturan bawaan (`USE_OPTUNA = False`, `USE_EXTRA_MODELS = False`, `SEED = 42`
 
 - Label risiko kebocoran pada `literature/` berasal dari aturan kata kunci pada abstrak dan perlu diverifikasi dengan teks lengkap.
 - SMOTE diimplementasikan langsung mengikuti Chawla dkk. (2002) agar tidak bergantung pada `imbalanced-learn`.
+
+## Sitasi
+
+Arsip kode: Ade Rumintarsih (2026). *KEBOCORAN-DATA-STROKE* [Kode dan data hasil]. Zenodo. https://doi.org/10.5281/zenodo.23887243
 
 ## Lisensi
 
