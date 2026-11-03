@@ -1,0 +1,7 @@
+{
+ "clf__estimator__min_samples_leaf": "50",
+ "clf__estimator__max_leaf_nodes": "7",
+ "clf__estimator__max_depth": "None",
+ "clf__estimator__learning_rate": "0.008337822234717891",
+ "clf__estimator__l2_regularization": "0.1668100537200059"
+}

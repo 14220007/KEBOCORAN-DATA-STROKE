@@ -1,0 +1,8 @@
+{
+ "n_test_positif": 972,
+ "n_test_positif_sintetis": 931,
+ "persen_sintetis": 95.8,
+ "median_jarak_sintetis_uji_ke_latih": 0.07351499043836394,
+ "median_jarak_antar_pasien_stroke_asli": 1.111676389824911,
+ "rasio_jarak": 15.121764733914464
+}

@@ -18,7 +18,9 @@ Banyak studi pada *Stroke Prediction Dataset* Kaggle (5.110 data, prevalensi str
 - 931 dari 972 kasus positif (95,8%) pada data uji skenario bocor adalah sampel sintetis.
 - Dengan *nested cross-validation*, kinerja realistis berada pada ROC-AUC 0,80–0,84 dan PR-AUC 0,14–0,19.
 - Random Forest terbaik tidak lebih baik daripada regresi logistik (uji Wilcoxon berpasangan, p = 0,375).
-- Koreksi ketidakseimbangan kelas merusak kalibrasi; kalibrasi isotonik menurunkan Brier score dari 0,164 menjadi 0,042.
+- SMOTE dan SMOTE-NC tidak mengungguli model tanpa penanganan pada Random Forest dan gradient boosting.
+- Koreksi ketidakseimbangan kelas merusak kalibrasi (Brier score naik dari 0,042 menjadi 0,146–0,181).
+- Model yang dipilih hanya dari data latih (HGB tanpa penanganan) mencapai ROC-AUC 0,826, recall 0,800, dan spesifisitas 0,788 pada data uji, dan memberi net benefit pada ambang 2–16% (decision curve analysis), meskipun Brier skill score-nya hanya 0,080.
 
 ## Struktur
 
@@ -26,6 +28,7 @@ Banyak studi pada *Stroke Prediction Dataset* Kaggle (5.110 data, prevalensi str
 notebooks/
   01_eksperimen_utama.ipynb   skrining literatur, eksperimen 1–3, gambar
   02_revisi_M1_M3.ipynb       seleksi model hanya dari data latih (M1), SMOTE-NC (M3), statistik lengkap
+  03_kalibrasi_DCA_uji_terkoreksi.ipynb  Brier skill score, slope kalibrasi, decision curve, uji Nadeau–Bengio
 results/                      CSV/JSON hasil eksperimen (dipakai di naskah)
 figures/                      gambar naskah
 literature/                   metadata skrining 81 artikel Scopus (tanpa abstrak)
@@ -36,7 +39,7 @@ data/                         letakkan dataset di sini (tidak disertakan)
 
 1. Pasang paket: `pip install -r requirements.txt`
 2. Unduh dataset dari Kaggle (lihat `data/README.md`) dan simpan sebagai `data/healthcare-dataset-stroke-data.csv`.
-3. Jalankan `notebooks/01_eksperimen_utama.ipynb`, lalu `notebooks/02_revisi_M1_M3.ipynb` (*Run All*). Hasil tersimpan di `results/`.
+3. Jalankan `notebooks/01_eksperimen_utama.ipynb`, `notebooks/02_revisi_M1_M3.ipynb`, lalu `notebooks/03_kalibrasi_DCA_uji_terkoreksi.ipynb` (*Run All*). Hasil tersimpan di `results/`.
 
 Pengaturan bawaan (`USE_OPTUNA = False`, `USE_EXTRA_MODELS = False`, `SEED = 42`) mereproduksi angka di naskah. Bagian skrining literatur hanya berjalan bila file ekspor Scopus (`export_*.csv`) diletakkan di `data/`; file tersebut tidak dibagikan karena berlisensi Elsevier.
 

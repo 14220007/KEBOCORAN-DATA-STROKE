@@ -1,0 +1,16 @@
+Uji,Strategi,Model,Delta,p
+Wilcoxon default vs tuned (PR-AUC),class_weight,HGB,0.01908303316358185,0.275390625
+Wilcoxon default vs tuned (PR-AUC),class_weight,LR,-0.0029360617998884287,0.4921875
+Wilcoxon default vs tuned (PR-AUC),class_weight,RF,0.04182321571311098,0.001953125
+Wilcoxon default vs tuned (PR-AUC),none,HGB,0.019510037721734028,0.083984375
+Wilcoxon default vs tuned (PR-AUC),none,LR,-0.0020287319524387114,0.556640625
+Wilcoxon default vs tuned (PR-AUC),none,RF,0.04469113225521145,0.009765625
+Wilcoxon default vs tuned (PR-AUC),rus,HGB,0.023258272489393723,0.16015625
+Wilcoxon default vs tuned (PR-AUC),rus,LR,-0.00029516704469925714,0.845703125
+Wilcoxon default vs tuned (PR-AUC),rus,RF,0.026762791833994947,0.013671875
+Wilcoxon default vs tuned (PR-AUC),smote,HGB,0.024318768171471595,0.083984375
+Wilcoxon default vs tuned (PR-AUC),smote,LR,-0.0011792385566544827,0.4921875
+Wilcoxon default vs tuned (PR-AUC),smote,RF,0.02944325349786559,0.037109375
+"Friedman antar strategi (tuned, PR-AUC)",class_weight|none|rus|smote,HGB,,0.0025477700932254495
+"Friedman antar strategi (tuned, PR-AUC)",class_weight|none|rus|smote,LR,,0.4301270276689225
+"Friedman antar strategi (tuned, PR-AUC)",class_weight|none|rus|smote,RF,,0.00033072142736429084
