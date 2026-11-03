@@ -1,6 +1,6 @@
 # Bias Kebocoran Data akibat SMOTE pada Prediksi Stroke
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23887243.svg)](https://doi.org/10.5281/zenodo.23887243)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23887242.svg)](https://doi.org/10.5281/zenodo.23887242)
 
 Kode dan hasil eksperimen untuk artikel:
 
@@ -50,7 +50,7 @@ Pengaturan bawaan (`USE_OPTUNA = False`, `USE_EXTRA_MODELS = False`, `SEED = 42`
 
 ## Sitasi
 
-Arsip kode: Ade Rumintarsih (2026). *KEBOCORAN-DATA-STROKE* [Kode dan data hasil]. Zenodo. https://doi.org/10.5281/zenodo.23887243
+Arsip kode: Ade Rumintarsih (2026). *KEBOCORAN-DATA-STROKE* [Kode dan data hasil]. Zenodo. https://doi.org/10.5281/zenodo.23887242
 
 ## Lisensi
 
