@@ -1,0 +1,145 @@
+{
+ "bmi": {
+  "n_kosong": 201,
+  "stroke_kosong": 40,
+  "laju_kosong": 0.19900497512437812,
+  "n_ada": 4908,
+  "stroke_ada": 209,
+  "laju_ada": 0.04258353708231459,
+  "usia_median_kosong": 58.0,
+  "usia_median_ada": 44.0,
+  "odds_ratio": 5.585901512674968,
+  "p_fisher": 4.371346785804348e-15
+ },
+ "ros": {
+  "test_positif": 972,
+  "test_positif_salinan": 931,
+  "test_positif_identik_dgn_latih": 972
+ },
+ "jarak": {
+  "ruang": "fitur hasil praproses: 3 numerik terstandardisasi + 2 biner + 10 kolom one-hot (15 dimensi), jarak Euclidean",
+  "n_uji_positif": 972,
+  "n_sintetis": 931,
+  "n_asli": 41,
+  "median_NN_sintetis_uji_ke_positif_latih": 0.07351499043836394,
+  "median_NN_asli_uji_ke_positif_latih": 0.03095508541945643,
+  "median_NN_LOO_antar_stroke_asli": 1.111676389824911,
+  "median_NN_asli_uji_ke_stroke_asli_latih": 1.1945581512478531,
+  "rasio_LOO_vs_sintetis": 15.121764733914464,
+  "numerik_saja_median_sintetis": 0.03213133758944326,
+  "numerik_saja_median_LOO_asli": 0.19802704195385626
+ },
+ "usia_saja": {
+  "nestedcv": {
+   "Accuracy": 0.9512624779800353,
+   "ROC_AUC": 0.8332816864164476,
+   "PR_AUC": 0.1652132550197135,
+   "Recall": 0.0,
+   "Specificity": 1.0,
+   "Precision": 0.0,
+   "F1": 0.0,
+   "MCC": 0.0,
+   "Brier": 0.042619320435888085
+  },
+  "per_fold": {
+   "Fold": 4.5,
+   "PR_AUC": 0.1744306083256727,
+   "ROC_AUC": 0.8343691945914168
+  },
+  "uji": {
+   "Accuracy": 0.9510763209393346,
+   "ROC_AUC": 0.8346604938271605,
+   "PR_AUC": 0.20870763408568652,
+   "Recall": 0.0,
+   "Specificity": 1.0,
+   "Precision": 0.0,
+   "F1": 0.0,
+   "MCC": 0.0,
+   "Brier": 0.04148426779227563
+  },
+  "uji_youden": {
+   "ambang": 0.038098187805606636,
+   "Accuracy": 0.6731898238747553,
+   "ROC_AUC": 0.8346604938271605,
+   "PR_AUC": 0.20870763408568652,
+   "Recall": 0.84,
+   "Specificity": 0.6646090534979424,
+   "Precision": 0.11413043478260869,
+   "F1": 0.20095693779904306,
+   "MCC": 0.22675683641422684,
+   "Brier": 0.04148426779227563
+  },
+  "uji_intercept": 0.01865525797424739,
+  "uji_slope": 1.0294079818990254
+ },
+ "akhir_indikator_False": {
+  "ambang": 0.06385139390123283,
+  "Accuracy": 0.7886497064579256,
+  "ROC_AUC": 0.8256069958847735,
+  "PR_AUC": 0.211952283777863,
+  "Recall": 0.8,
+  "Specificity": 0.7880658436213992,
+  "Precision": 0.16260162601626016,
+  "F1": 0.2702702702702703,
+  "MCC": 0.2967192179309568,
+  "Brier": 0.04281124230888872,
+  "intercept": 0.012623025687569662,
+  "slope": 1.8874199818779465,
+  "ROC_05": null
+ },
+ "akhir_indikator_True": {
+  "ambang": 0.05987118065836583,
+  "Accuracy": 0.7906066536203522,
+  "ROC_AUC": 0.8197736625514402,
+  "PR_AUC": 0.21601333715510135,
+  "Recall": 0.8,
+  "Specificity": 0.7901234567901234,
+  "Precision": 0.16393442622950818,
+  "F1": 0.272108843537415,
+  "MCC": 0.29859071634499984,
+  "Brier": 0.04302526540567565,
+  "intercept": 0.030439739409238945,
+  "slope": 1.6850288501856465,
+  "ROC_05": null
+ },
+ "akhir_12_kandidat": {
+  "params": {
+   "clf__estimator__min_samples_leaf": "50",
+   "clf__estimator__max_leaf_nodes": "7",
+   "clf__estimator__max_depth": "None",
+   "clf__estimator__learning_rate": "0.008337822234717891",
+   "clf__estimator__l2_regularization": "0.1668100537200059"
+  },
+  "ambang": 0.06385139390123283,
+  "Accuracy": 0.7886497064579256,
+  "ROC_AUC": 0.8256069958847735,
+  "PR_AUC": 0.211952283777863,
+  "Recall": 0.8,
+  "Specificity": 0.7880658436213992,
+  "Precision": 0.16260162601626016,
+  "F1": 0.2702702702702703,
+  "MCC": 0.2967192179309568,
+  "Brier": 0.04281124230888872
+ },
+ "akhir_indikator_tuning_ulang": {
+  "params": {
+   "clf__estimator__min_samples_leaf": "20",
+   "clf__estimator__max_leaf_nodes": "31",
+   "clf__estimator__max_depth": "3",
+   "clf__estimator__learning_rate": "0.013538761800225438",
+   "clf__estimator__l2_regularization": "0.021544346900318832"
+  },
+  "ambang": 0.06462274225679161,
+  "Accuracy": 0.7915851272015656,
+  "ROC_AUC": 0.8341769547325102,
+  "PR_AUC": 0.22444332295102845,
+  "Recall": 0.76,
+  "Specificity": 0.7932098765432098,
+  "Precision": 0.1589958158995816,
+  "F1": 0.2629757785467128,
+  "MCC": 0.2819215199315358,
+  "Brier": 0.042667520994659064,
+  "intercept": 0.038596560583752715,
+  "slope": 1.379180712975269
+ }
+}

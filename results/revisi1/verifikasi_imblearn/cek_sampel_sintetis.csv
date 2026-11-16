@@ -1,0 +1,5 @@
+Algoritma,Implementasi,n_latih,n_positif,n_sintetis,pecahan_kategorikal,rata2_usia_sintetis_z,sd_usia_sintetis_z
+SMOTE,implementasi sendiri,7776,3888,3689,0.1111,1.109,0.445
+SMOTE,imbalanced-learn,7776,3888,3689,0.1094,1.105,0.457
+SMOTE-NC,implementasi sendiri,7776,3888,3689,0.0,1.095,0.466
+SMOTE-NC,imbalanced-learn,7776,3888,3689,0.0,1.099,0.474
